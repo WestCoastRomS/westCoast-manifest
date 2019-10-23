@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/WestCoastRomS"
+           revision="refs/heads/wcroms-9.0" />
+
+  <!-- westcoastroms additions -->
+  <project path="build/make" name="WestCoastRomS/platform_build" remote="github" fetch="https://github.com/WestCoastRomS/platform_build.git" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="device/lineage/sepolicy" name="WestCoastRomS/android_device_lineage_sepolicy" remote="github"  />
+
+  <project path="external/expat" name="WestCoastRomS/android_external_expat" remote="github" fetch="https://github.com/WestCoastRomS/android_device_lineage_sepolicy.git" />
+  <project path="external/freetype" name="WestCoastRomS/android_external_freetype" remote="github" fetch="https://github.com/WestCoastRomS/android_external_freetype.git" />
+  <project path="external/jemalloc" name="WestCoastRomS/android_external_jemalloc" remote="github" />
+  <project path="external/libjpeg-turbo" name="WestCoastRomS/android_external_libjpeg-turbo" remote="github" />
+  <project path="external/libpng" name="WestCoastRomS/android_external_libpng" remote="github" />
+  <project path="external/skia" name="WestCoastRomS/android_external_skia" remote="github" />
+  <project path="external/sqlite" name="WestCoastRomS/android_external_sqlite" remote="github" />
+
+  <project path="frameworks/av" name="WestCoastRomS/android_frameworks_av" remote="github" />
+  <project path="frameworks/base" name="WestCoastRomS/android_frameworks_base" remote="github" />
+  <project path="frameworks/native" name="WestCoastRomS/android_frameworks_native" remote="github" />
+  <project path="frameworks/opt/telephony" name="WestCoastRomS/android_frameworks_opt_telephony" remote="github" />
+  <project path="frameworks/opt/net/wifi" name="WestCoastRomS/android_frameworks_opt_net_wifi" remote="github" />
+  <project path="frameworks/support" name="WestCoastRomS/android_frameworks_support" remote="github" />
+  <project path="frameworks/support/lottie" name="WestCoastRomS/android_frameworks_support_lottie" remote="github" />
+
+  <project path="libcore" name="WestCoastRomS/android_libcore" remote="github" />
+
+  <project path="lineage-sdk" name="WestCoastRomS/android_lineage-sdk" remote="github" />
+
+  <project path="packages/apps/AIDLBridge" name="WestCoastRomS/android_packages_apps_AIDLBridge" remote="github" />
+  <project path="packages/apps/crDroidHome" name="WestCoastRomS/android_packages_apps_crDroidHome" remote="github" />
+  <project path="packages/apps/crDroidSettings" name="WestCoastRomS/android_packages_apps_crDroidSettings" remote="github" />
+  <project path="packages/apps/DUI" name="WestCoastRomS/android_packages_apps_DUI" remote="github" />
+  <project path="packages/apps/Dialer" name="WestCoastRomS/android_packages_apps_Dialer" remote="github" />
+  <project path="packages/apps/LineageParts" name="WestCoastRomS/android_packages_apps_LineageParts" remote="github" />
+  <project path="packages/apps/OmniStyle" name="WestCoastRomS/android_packages_apps_OmniStyle" remote="github" />
+  <project path="packages/apps/Recorder" name="WestCoastRomS/android_packages_apps_Recorder" remote="github" />
+  <project path="packages/apps/Settings" name="WestCoastRomS/android_packages_apps_Settings" remote="github" />
+  <project path="packages/apps/SettingsIntelligence" name="WestCoastRomS/android_packages_apps_SettingsIntelligence" remote="github" />
+  <project path="packages/apps/SetupWizard" name="WestCoastRomS/android_packages_apps_SetupWizard" remote="github" />
+  <project path="packages/apps/Snap" name="WestCoastRomS/android_packages_apps_Snap" remote="github" />
+  <project path="packages/apps/WeatherClient" name="WestCoastRomS/android_packages_apps_WeatherClient" remote="github" />
+  <project path="packages/providers/MediaProvider" name="WestCoastRomS/android_packages_providers_MediaProvider" remote="github" />
+  <project path="packages/services/Telecomm" name="WestCoastRomS/android_packages_services_Telecomm" remote="github" />
+  <project path="packages/services/Telephony" name="WestCoastRomS/android_packages_services_Telephony" remote="github" />
+
+  <project path="system/core" name="WestCoastRomS/android_system_core" remote="github" />
+  <project path="system/extras/su" name="WestCoastRomS/android_system_extras_su" remote="github" />
+  <project path="system/sepolicy" name="WestCoastRomS/android_system_sepolicy" remote="github" />
+
+  <project path="vendor/lineage" name="WestCoastRomS/android_vendor_crdroid" remote="github" />
+</manifest>
