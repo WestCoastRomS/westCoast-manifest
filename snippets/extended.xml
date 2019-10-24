@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- crDroid Mod additions -->
+  <project path="art" name="crDroidMod/android_art" remote="crdroidmod" />
+  <project path="android" name="crDroidMod/android" remote="crdroidmod" />
+  <project path="bionic" name="crDroidMod/android_bionic" remote="crdroidmod" />
+  <project path="build/soong" name="crDroidMod/android_build_soong" remote="crdroidmod" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="dalvik" name="crDroidMod/android_dalvik" remote="crdroidmod" />
+  <project path="external/arm-optimized-routines" name="crDroidMod/android_external_arm-optimized-routines" remote="crdroidmod" />
+  <project path="external/noto-fonts" name="crDroidMod/android_external_noto-fonts" remote="crdroidmod" />
+  <project path="hardware/broadcom/libbt" name="crDroidMod/android_hardware_broadcom_libbt" remote="crdroidmod" />
+  <project path="hardware/broadcom/wlan" name="crDroidMod/android_hardware_broadcom_wlan" remote="crdroidmod" />
+  <project path="packages/apps/crDroidFonts" name="crDroidMod/android_packages_apps_crDroidFonts" remote="crdroidmod" />
+  <project path="prebuilts/clang/host/linux-x86/clang-5900059" name="crDroidMod/android_prebuilts_clang_host_linux-x86_clang-5900059" clone-depth="1" remote="crdroidmod" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-4.9.4" name="crDroidMod/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-4.9.4" clone-depth="1" remote="crdroidmod" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-6.5.0" name="crDroidMod/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-6.5.0" clone-depth="1" remote="crdroidmod" />
+  <project path="vendor/addons" name="crDroidMod/android_vendor_addons" remote="crdroidmod" />
+  <project path="vendor/gapps" name="crDroidMod/android_vendor_gapps" clone-depth="1" remote="crdroidmod" />
+  <project path="vendor/gms" name="crDroidMod/android_vendor_gms" clone-depth="1" remote="crdroidmod" />
+  <project path="vendor/thirdparty" name="crDroidMod/android_vendor_thirdparty" clone-depth="1" remote="crdroidmod" />
+
+  <!-- LineageOS -->
+  <project path="hardware/qcom/audio-caf/msm8998" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/audio-caf/sm8150" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8150" />
+  <project path="hardware/qcom/display-caf/msm8998" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/display-caf/sm8150" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8150" />
+  <project path="hardware/qcom/media-caf/msm8998" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/media-caf/sm8150" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-8150" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
+
+</manifest>
