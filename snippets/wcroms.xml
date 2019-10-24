@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="github"
-           fetch="https://github.com/WestCoastRomS"
+           fetch="https://github.com/"
            revision="refs/heads/wcroms-9.0" />
 
   <!-- westcoastroms additions -->
